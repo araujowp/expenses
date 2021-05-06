@@ -8,6 +8,7 @@ class ExpensesApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: MyHome(),
     );
   }
@@ -21,11 +22,13 @@ class MyHome extends StatelessWidget {
       appBar: AppBar(
         title: Text('Despesas Pessoais'),
       ),
-      body: Column(
-        children: [
-          Text('Graficos'),
-          TransactionUser()
-        ],
+      body: SingleChildScrollView(
+              child: Column(
+          children: [
+            Text('Graficos'),
+            TransactionUser()
+          ],
+        ),
       ),
     );
   }
