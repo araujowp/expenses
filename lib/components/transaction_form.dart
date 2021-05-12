@@ -37,7 +37,6 @@ class TransacionForm extends StatelessWidget {
                             TextButton(
                               style: TextButton.styleFrom(primary: Colors.purple,),
                               child: Text('Nova Transacao '),
-                              //ba: Colors.purple,
                               onPressed: () {
                                 final title = titleControler.text;
                                 final value = double.tryParse(valueControler.text) ?? 0.0;
