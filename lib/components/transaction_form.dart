@@ -51,6 +51,7 @@ class _TransactionFormState extends State<TransactionForm> {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
+                // ignore: deprecated_member_use
                 FlatButton(
                   child: Text('Nova Transação'),
                   textColor: Colors.purple,
